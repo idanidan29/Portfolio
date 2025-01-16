@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
@@ -48,7 +48,6 @@ export const BentoGridItem = ({
 }) => {
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
-
   const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
@@ -61,7 +60,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "29idan29@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -84,13 +83,13 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
+              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+            }`}
         >
           {spareImg && (
             <img
@@ -122,7 +121,6 @@ export const BentoGridItem = ({
           </div>
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-            
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
                   <span
@@ -157,7 +155,6 @@ export const BentoGridItem = ({
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
-
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
                 icon={<IoCopyOutline />}
@@ -172,3 +169,29 @@ export const BentoGridItem = ({
     </div>
   );
 };
+
+// Example Usage of BentoGrid and BentoGridItem
+const GridPage = () => {
+  const gridItems = [
+    { id: 1, title: "Item 1", description: "Description for Item 1" },
+    { id: 2, title: "Item 2", description: "Description for Item 2" },
+    { id: 3, title: "Item 3", description: "Description for Item 3" },
+  ];
+
+  return (
+    <section id="about">
+      <BentoGrid className="w-full py-20">
+        {gridItems.map((item) => (
+          <BentoGridItem
+            key={item.id}
+            id={item.id}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </BentoGrid>
+    </section>
+  );
+};
+
+export default GridPage;
