@@ -56,7 +56,7 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
+  /*const defaultOptions = {
     loop: copied,
     autoplay: copied,
     animationData: animationData,
@@ -64,7 +64,7 @@ export const BentoGridItem = ({
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
+*/
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
     navigator.clipboard.writeText(text);
