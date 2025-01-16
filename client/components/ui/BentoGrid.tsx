@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 
-import animationData from "@/data/confetti.json";
+//import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
 export const BentoGrid = ({
@@ -53,7 +53,7 @@ export const BentoGridItem = ({
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
-
+/*
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
@@ -62,7 +62,7 @@ export const BentoGridItem = ({
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
+*/
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
     navigator.clipboard.writeText(text);
