@@ -2,6 +2,7 @@
 
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import Grid from "@/components/Grid";
 import { navItems } from "../data";
 
 
@@ -11,6 +12,7 @@ const Home = () => {
       <div className="max-w-7xl w-full">
       <FloatingNav navItems={navItems} />
        <Hero/>
+       <Grid />
  
       </div>
     </main>
