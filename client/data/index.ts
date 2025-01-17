@@ -28,8 +28,8 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "test",
-      description: "test",
+      title: "My tech stack",
+      description: "I constantly try to improve",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
       titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "test",
+      title: "Tech enthusiast with a passion for development.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
