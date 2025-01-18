@@ -1,3 +1,5 @@
+import { u } from "framer-motion/client";
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -79,18 +81,16 @@ export const navItems = [
       link: "https://bs-fse-2025.vercel.app",
     }
   ];
-  
+
   export const socialMedia = [
     {
       id: 1,
       img: "/git.svg",
-    },
-    {
-      id: 2,
-      img: "/twit.svg",
+      url: "https://github.com/idanidan29",
     },
     {
       id: 3,
       img: "/link.svg",
+      url: "https://www.linkedin.com/in/idan-levi-7a8506242",
     },
   ];
