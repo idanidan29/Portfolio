@@ -5,6 +5,7 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Grid from "@/components/Grid";
 import { navItems } from "../data";
 import RecentProjects from "@/components/RecentProjects"; 
+import Footer from "@/components/Footer";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
        <Hero/>
        <Grid />
       <RecentProjects />
+      <Footer/>
  
       </div>
     </main>
