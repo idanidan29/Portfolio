@@ -10,7 +10,7 @@ const Testimonials = () => {
     <section id="testimonials" className="py-20">
       <h1 className="heading">
         Kind words from
-        <span className="text-purple"> Those I've Worked With</span>
+        <span className="text-purple"> Those I&apos;ve Worked With</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
