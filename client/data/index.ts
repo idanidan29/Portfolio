@@ -76,8 +76,8 @@ export const navItems = [
       id: 1,
       title: "form management system", 
       des: "be able to make a lottery, visualize data, generate files and more",
-      img: "/",
-      iconLists: ["/next.svg", "/tail.svg", "js.svg", "/express.png", "/Mongodb.png","/vercel.png"],
+      img: "/ParkingP.png",
+      iconLists: ["/next.svg", "/tail.svg", "js.svg", "/express.png", "/Mongodb.png","/vercel.png","/render.png"],
       link: "https://bs-fse-2025.vercel.app",
     },
     {
