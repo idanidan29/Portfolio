@@ -102,3 +102,39 @@ export const navItems = [
       url: "https://www.linkedin.com/in/idan-levi-7a8506242",
     },
   ];
+
+  export const testimonials = [
+    {
+      quote:
+        "recomandation 1",
+      name: "test",
+      title: "test",
+    },
+    {
+      quote:
+        "recomandation 2",
+      name: "test",
+      title: "test",
+    },
+  ];
+  
+  export const companies = [
+    {
+      id: 1,
+      name: "test",
+      img: "/",
+      nameImg: "/",
+    },
+    {
+      id: 2,
+      name: "test",
+      img: "/",
+      nameImg: "/",
+    },
+    {
+      id: 3,
+      name: "test",
+      img: "/",
+      nameImg: "/",
+    },
+  ];

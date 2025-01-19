@@ -6,6 +6,7 @@ import Grid from "@/components/Grid";
 import { navItems } from "../data";
 import RecentProjects from "@/components/RecentProjects"; 
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
        <Hero/>
        <Grid />
       <RecentProjects />
+      <Testimonials />
       <Footer/>
  
       </div>
