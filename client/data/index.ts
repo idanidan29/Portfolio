@@ -10,7 +10,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "test ",
+      title: "I prioritize clear communication and collaboration. ",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
       imgClassName: "w-full h-full",
@@ -20,7 +20,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "maybe a earth animation ",
+      title: " animation ",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -121,20 +121,20 @@ export const navItems = [
   export const companies = [
     {
       id: 1,
-      name: "test",
+      name: "sela",
       img: "/",
-      nameImg: "/",
+      nameImg: "/sela.png",
     },
     {
       id: 2,
       name: "test",
       img: "/",
-      nameImg: "/",
+      nameImg: "/SCE_logo.png",
     },
     {
       id: 3,
       name: "test",
       img: "/",
-      nameImg: "/",
+      nameImg: "/idf.png",
     },
   ];
