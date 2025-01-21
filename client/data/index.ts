@@ -1,3 +1,4 @@
+import { profile } from "console";
 
 
 export const navItems = [
@@ -106,15 +107,17 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "recomandation 1",
-      name: "test",
-      title: "test",
+        "test",
+      name: "Ariel Barbie",
+      title: "Lieutenant Colonel and Commander of the Battalion 47 Battalion",
+      profile:"/barbie.png"
     },
     {
       quote:
         "recomandation 2",
       name: "test",
       title: "test",
+      profile:"/barbie.png"
     },
   ];
   
