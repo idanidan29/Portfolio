@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, ElementType } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -16,23 +16,22 @@ export function Button({
   as: Component = "button",
   containerClassName,
   borderClassName,
-  duration = 2000,
+  duration,
   className,
   ...otherProps
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: React.ElementType;
+  as?: ElementType; // Use ElementType for the `as` prop
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown; // Use unknown for additional props
 }) {
   return (
     <Component
       className={cn(
-        // Remove h-16 w-40, add md:col-span-2
         "bg-transparent relative text-xl p-[1px] overflow-hidden md:col-span-2 md:row-span-1",
         containerClassName
       )}
@@ -81,9 +80,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: unknown; // Use unknown for additional props
 }) => {
-  const pathRef = useRef<SVGRectElement | null>(null);
+  const pathRef = useRef<SVGRectElement | null>(null); // Use SVGRectElement for the ref
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
@@ -96,11 +95,11 @@ export const MovingBorder = ({
 
   const x = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).x || 0
+    (val) => pathRef.current?.getPointAtLength(val)?.x || 0
   );
   const y = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).y || 0
+    (val) => pathRef.current?.getPointAtLength(val)?.y || 0
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
@@ -124,19 +123,17 @@ export const MovingBorder = ({
           ref={pathRef}
         />
       </svg>
-      {children && (
-        <motion.div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            display: "inline-block",
-            transform,
-          }}
-        >
-          {children}
-        </motion.div>
-      )}
+      <motion.div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          display: "inline-block",
+          transform,
+        }}
+      >
+        {children}
+      </motion.div>
     </>
   );
 };
