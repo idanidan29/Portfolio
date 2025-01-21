@@ -7,6 +7,7 @@ import { navItems } from "../data";
 import RecentProjects from "@/components/RecentProjects"; 
 import Footer from "@/components/Footer";
 import Testimonials from "@/components/Testimonials";
+import Experience from "@/components/Experience";
 
 
 const Home = () => {
@@ -17,9 +18,10 @@ const Home = () => {
        <Hero/>
        <Grid />
       <RecentProjects />
+      <Experience/>
       <Testimonials />
       <Footer/>
- 
+
       </div>
     </main>
   );

@@ -135,3 +135,33 @@ export const navItems = [
       nameImg: "/idf.png",
     },
   ];
+  export const workExperience = [
+    {
+      id: 1,
+      title: "Sela Fullstack Course",
+      desc: "10 months of intensive fullstack development training, learning the latest technologies, tools, and methodologies.",
+      className: "md:col-span-2",
+      thumbnail: "/exp1.svg",
+    },
+    {
+      id: 2,
+      title: "Hackathon Mentor",
+      desc: "Mentored groups in a 48-hour hackathon, guiding them through the development process. and used as advisor",
+      className: "md:col-span-2",
+      thumbnail: "/exp2.svg",
+    },
+    {
+      id: 3,
+      title: "Software Engineering",
+      desc: "Currently pursuing a degree in software engineering, focusing on building a strong foundation in programming, system design, and modern software development practices.",
+      className: "md:col-span-2", 
+      thumbnail: "/exp3.svg",
+    },
+    {
+      id: 4,
+      title: "Handful of Projects",
+      desc: "Developed multiple projects focusing on web development, backend systems, and database integration, with attention to performance and user experience.",
+      className: "md:col-span-2",
+      thumbnail: "/exp4.svg",
+    },
+  ];
