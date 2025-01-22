@@ -52,7 +52,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS finance tracking app system",
+      title: "Currently building a JS finance tracking app",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -75,7 +75,7 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "form management system", 
+      title: "Form Management System", 
       des: "be able to make a lottery, visualize data, generate files and more",
       img: "/ParkingP.png",
       iconLists: ["/next.svg", "/tail.svg", "js.svg", "/express.png", "/Mongodb.png","/vercel.png","/render.png"],
@@ -83,7 +83,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "this Portfolio website", 
+      title: "This Portfolio", 
       des: "A website to showcase my work and skills",
       img: "/Portfolio.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png","/vercel.png"],
@@ -109,7 +109,7 @@ export const navItems = [
       quote:
         "Idan Levy, a former combat commander in the 47th Yalvia Battalion, demonstrated exceptional leadership, professionalism, and dedication during his military service. Over 21 months, he successfully commanded teams, handled high-pressure situations, and fulfilled responsibilities often beyond his rank. His adaptability, problem-solving skills, and commitment to excellence make him well-suited for challenging environments.",
       name: "Ariel Barbie",
-      title: "Lieutenant Colonel and Commander of the Battalion 47 Battalion",
+      title: "Lieutenant Colonel and the Commander of the 47 Battalion",
       profile:"/barbie.png"
     },
     
