@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import GridGlobe from "./GridGlobe";
 
 // Dynamically import Lottie with ssr: false
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
@@ -123,6 +124,7 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
+          {id === 2 && <GridGlobe />}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
