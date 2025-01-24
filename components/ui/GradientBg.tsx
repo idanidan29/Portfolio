@@ -41,6 +41,36 @@ export const BackgroundGradientAnimation = ({
   const [tgX, setTgX] = useState(0);
   const [tgY, setTgY] = useState(0);
 
+  const move = () => {
+    if (!interactiveRef.current) return;
+    setCurX(curX + (tgX - curX) / 20);
+    setCurY(curY + (tgY - curY) / 20);
+    interactiveRef.current.style.transform = `translate(${Math.round(
+      curX
+    )}px, ${Math.round(curY)}px)`;
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && interactive) {
+      move();
+    }
+  }, [tgX, tgY, curX, curY, interactive]);
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (interactiveRef.current) {
+      const rect = interactiveRef.current.getBoundingClientRect();
+      setTgX(event.clientX - rect.left);
+      setTgY(event.clientY - rect.top);
+    }
+  };
+
+  const [isSafari, setIsSafari] = useState(false);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
+    }
+  }, []);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       // Apply CSS variables for gradient and color settings
@@ -73,36 +103,6 @@ export const BackgroundGradientAnimation = ({
     size,
     blendingValue,
   ]);
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && interactive) {
-      // Handle mouse movement animation
-      function move() {
-        if (!interactiveRef.current) return;
-        setCurX(curX + (tgX - curX) / 20);
-        setCurY(curY + (tgY - curY) / 20);
-        interactiveRef.current.style.transform = `translate(${Math.round(
-          curX
-        )}px, ${Math.round(curY)}px)`;
-      }
-      move();
-    }
-  }, [tgX, tgY, curX, curY, interactive]);
-
-  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
-    if (interactiveRef.current) {
-      const rect = interactiveRef.current.getBoundingClientRect();
-      setTgX(event.clientX - rect.left);
-      setTgY(event.clientY - rect.top);
-    }
-  };
-
-  const [isSafari, setIsSafari] = useState(false);
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsSafari(/^((?!chrome|android).)*safari/i.test(navigator.userAgent));
-    }
-  }, []);
 
   return (
     <div
