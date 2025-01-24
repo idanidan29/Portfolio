@@ -1,14 +1,13 @@
 "use client";
 
 import { navItems } from "@/data";
-
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
-import Clients from "@/components/Testimonials";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import Testimonials from "@/components/Testimonials";
 
 const Home = () => {
   return (
@@ -18,8 +17,8 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-        <Clients />
-        <Experience />
+        <Testimonials/>
+        <Experience/>
         <Footer />
       </div>
     </main>
