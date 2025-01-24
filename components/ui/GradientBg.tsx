@@ -51,7 +51,7 @@ export const BackgroundGradientAnimation = ({
   };
 
   useEffect(() => {
-    if (typeof window !== "undefined" && interactive) {
+    if (interactive) {
       move();
     }
   }, [tgX, tgY, curX, curY, interactive]);
@@ -74,22 +74,17 @@ export const BackgroundGradientAnimation = ({
   useEffect(() => {
     if (typeof window !== "undefined") {
       // Apply CSS variables for gradient and color settings
-      document.body.style.setProperty(
-        "--gradient-background-start",
-        gradientBackgroundStart
-      );
-      document.body.style.setProperty(
-        "--gradient-background-end",
-        gradientBackgroundEnd
-      );
-      document.body.style.setProperty("--first-color", firstColor);
-      document.body.style.setProperty("--second-color", secondColor);
-      document.body.style.setProperty("--third-color", thirdColor);
-      document.body.style.setProperty("--fourth-color", fourthColor);
-      document.body.style.setProperty("--fifth-color", fifthColor);
-      document.body.style.setProperty("--pointer-color", pointerColor);
-      document.body.style.setProperty("--size", size);
-      document.body.style.setProperty("--blending-value", blendingValue);
+      const bodyStyle = document.body.style;
+      bodyStyle.setProperty("--gradient-background-start", gradientBackgroundStart);
+      bodyStyle.setProperty("--gradient-background-end", gradientBackgroundEnd);
+      bodyStyle.setProperty("--first-color", firstColor);
+      bodyStyle.setProperty("--second-color", secondColor);
+      bodyStyle.setProperty("--third-color", thirdColor);
+      bodyStyle.setProperty("--fourth-color", fourthColor);
+      bodyStyle.setProperty("--fifth-color", fifthColor);
+      bodyStyle.setProperty("--pointer-color", pointerColor);
+      bodyStyle.setProperty("--size", size);
+      bodyStyle.setProperty("--blending-value", blendingValue);
     }
   }, [
     gradientBackgroundStart,
@@ -137,16 +132,16 @@ export const BackgroundGradientAnimation = ({
         )}
         onMouseMove={interactive ? handleMouseMove : undefined}
       >
+        {/* Gradient Elements */}
         <div
           className={cn(
             `absolute [background:radial-gradient(circle_at_center,_var(--first-color)_0,_var(--first-color)_50%)_no-repeat]`,
             `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
             `[transform-origin:center_center]`,
-            `animate-first`,
-            `opacity-100`
+            `animate-first`
           )}
         ></div>
-        <div
+         <div
           className={cn(
             `absolute [background:radial-gradient(circle_at_center,_rgba(var(--second-color),_0.8)_0,_rgba(var(--second-color),_0)_50%)_no-repeat]`,
             `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
