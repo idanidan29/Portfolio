@@ -1,17 +1,17 @@
-import { useState } from "react";
+"use client";
+
+import React, { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-// Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
-
 import { cn } from "@/lib/utils";
 
-
-import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import { BackgroundLines } from "./background-lines";
 
+
+// BentoGrid Component
 export const BentoGrid = ({
   className,
   children,
@@ -31,6 +31,7 @@ export const BentoGrid = ({
   );
 };
 
+// BentoGridItem Component
 export const BentoGridItem = ({
   className,
   id,
@@ -82,19 +83,37 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
+      {id === 6 && (
+
+        <div className="absolute inset-0">
+          <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+            <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+               <br /> 
+            </h2>
+            <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
+              
+            </p>
+          </BackgroundLines>
+          
+        </div>
+      )}
+
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
+        {/* Item Image */}
         <div className="w-full h-full absolute">
           {img && (
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
+              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>
+
+        {/* Spare Image */}
         <div
           className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+            }`}
         >
           {spareImg && (
             <img
@@ -104,16 +123,12 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
-        )}
 
+        {/* Content */}
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 z-10"
           )}
         >
           <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
@@ -125,6 +140,7 @@ export const BentoGridItem = ({
             {title}
           </div>
 
+          {/* Additional Features */}
           {id === 2 && <GridGlobe />}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
@@ -177,3 +193,38 @@ export const BentoGridItem = ({
     </div>
   );
 };
+
+// Main Page Component
+export default function Page() {
+  return (
+    <div className="min-h-screen bg-black text-white p-10">
+      <BentoGrid>
+        <BentoGridItem
+          id={1}
+          title="Item 1"
+          description="Description for item 1"
+        />
+        <BentoGridItem
+          id={2}
+          title="Item 2"
+          description="Description for item 2"
+        />
+        <BentoGridItem
+          id={3}
+          title="Item 3"
+          description="Description for item 3"
+        />
+        <BentoGridItem
+          id={5}
+          title="Item 5"
+          description="Special Background with Boxes"
+        />
+        <BentoGridItem
+          id={6}
+          title="Item 6"
+          description="Interactive Lottie + Copy"
+        />
+      </BentoGrid>
+    </div>
+  );
+}
