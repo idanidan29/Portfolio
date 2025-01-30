@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
-import { BackgroundLines } from "./background-lines";
 import dynamic from 'next/dynamic';
 import { BackgroundGradientAnimation } from "./GradientBg";
 
@@ -164,7 +163,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {/*<Lottie options={defaultOptions} height={200} width={400} />*/}
               </div>
 
               <MagicButton
