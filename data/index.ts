@@ -107,10 +107,17 @@ export const navItems = [
   export const testimonials = [
     {
       quote:
-        "test",
+        "Idan Levy, a former combat commander in the 47th Yalvia Battalion, demonstrated exceptional leadership, professionalism, and dedication during his military service. Over 21 months, he successfully commanded teams, handled high-pressure situations, and fulfilled responsibilities often beyond his rank. His adaptability, problem-solving skills, and commitment to excellence make him well-suited for challenging environments.",
       name: "Ariel Barbie",
       title: "Lieutenant Colonel and Commander of the Battalion 47 Battalion",
       profile:"/barbie.png"
+    },
+    {
+      quote:
+        "I highly recommend Idan Levi for any opportunity in development. During his Fullstack training at Sela College, he consistently demonstrated dedication, a strong passion for learning, and enthusiasm for both backend and frontend technologies. His motivation and skills make him a strong candidate for any role or training in the field.",
+      name: "Sigal Nuriel Garoussi",
+      title: "Vice President ,Director of Sela College",
+      profile:"/sigal.png"
     },
     
   ];
