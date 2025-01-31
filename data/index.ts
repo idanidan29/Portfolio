@@ -78,14 +78,14 @@ export const navItems = [
       title: "form management system", 
       des: "be able to make a lottery, visualize data, generate files and more",
       img: "/ParkingP.png",
-      iconLists: ["/next.svg", "/tail.svg", "js.svg", "/express.png", "/Mongodb.png","/vercel.png","/render.png"],
+      iconLists: ["/next.svg", "/tail.svg", "js.svg", "express.png", "/Mongodb.svg","vercel.png","/render.png"],
       link: "https://bs-fse-2025.vercel.app",
     },
     {
       id: 2,
       title: "this Portfolio website", 
       des: "A website to showcase my work and skills",
-      img: "/Portfolio.png",
+      img: "/protfolio.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png","/vercel.png"],
       link: "https://portfolio-idan-levi-website.vercel.app/",
     }
