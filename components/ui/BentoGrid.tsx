@@ -78,7 +78,6 @@ export const BentoGridItem = ({
       )}
       style={{
 
-        //   used this for the color https://cssgradient.io/
         background: "rgb(4,7,29)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
@@ -127,6 +126,8 @@ export const BentoGridItem = ({
             {title}
           </div>
           {id === 2 && <GridGlobe />}
+          
+
 
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
@@ -163,7 +164,7 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-               <Lottie options={defaultOptions} height={200} width={400} />
+                {/*<Lottie options={defaultOptions} height={200} width={400} />*/}
               </div>
 
               <MagicButton
