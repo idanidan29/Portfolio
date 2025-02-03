@@ -80,7 +80,7 @@ export const navItems = [
       des: "be able to make a lottery, visualize data, generate files and more",
       img: "/ParkingP.png",
       iconLists: ["/next.svg", "/tail.svg", "js.svg", "express.png", "/Mongodb.svg","vercel.png","/render.png"],
-      link: "https://bs-fse-2025.vercel.app",
+      link: "https://github.com/idanidan29/BS-FSE-2025-Team9",
       tech:[
         {
           id: 1,
@@ -133,7 +133,7 @@ export const navItems = [
       des: "A website to showcase my work and skills",
       img: "/protfolio.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png","/vercel.png"],
-      link: "https://portfolio-idan-levi-website.vercel.app/",
+      link: "https://github.com/idanidan29/Portfolio",
       tech:[
         {
           id: 1,

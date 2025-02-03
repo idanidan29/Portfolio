@@ -1,7 +1,7 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaGithub } from "react-icons/fa";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
@@ -59,11 +59,13 @@ const RecentProjects = () => {
                 </div>
                 
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                <div className="flex justify-center items-center px-5 ">
+                
+                    <a href={item.link} className="flex lg:text-xl md:text-xs text-sm text-purple">
+                    Git
+                    <FaGithub className="ms-2 h-7 w-7" color="#CBACF9" />
+                    </a>
+                  
                 </div>
               </div>
             </PinContainer>
