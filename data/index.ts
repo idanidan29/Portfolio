@@ -76,6 +76,7 @@ export const navItems = [
     {
       id: 1,
       title: "form management system", 
+      short_title: "FMS",
       des: "be able to make a lottery, visualize data, generate files and more",
       img: "/ParkingP.png",
       iconLists: ["/next.svg", "/tail.svg", "js.svg", "express.png", "/Mongodb.svg","vercel.png","/render.png"],
@@ -127,7 +128,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "this Portfolio website", 
+      title: "this Portfolio website",
+      short_title: "Portfolio", 
       des: "A website to showcase my work and skills",
       img: "/protfolio.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png","/vercel.png"],
