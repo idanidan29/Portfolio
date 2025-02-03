@@ -4,12 +4,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import Link from "next/link";
+import { AnimatedTooltip } from "./ui/animated-tooltip";
 
 const RecentProjects = () => {
   return (
-    
     <div className="py-20" id="projects">
-      
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
@@ -51,17 +50,11 @@ const RecentProjects = () => {
 
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon" className="p-2" />
+                  
+                    <div className="flex flex-row items-center justify-center mb-5 w-full">
+                      <AnimatedTooltip items={item.tech} />
                     </div>
-                  ))}
+                  
                 </div>
 
                 <Link href={item.link}>

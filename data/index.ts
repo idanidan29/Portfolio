@@ -80,6 +80,50 @@ export const navItems = [
       img: "/ParkingP.png",
       iconLists: ["/next.svg", "/tail.svg", "js.svg", "express.png", "/Mongodb.svg","vercel.png","/render.png"],
       link: "https://bs-fse-2025.vercel.app",
+      tech:[
+        {
+          id: 1,
+          name: "Next.js",
+          designation: "used for the frontend",
+          image: "/next.svg",
+        },
+        {
+          id: 2,
+          name: "Tailwind CSS", 
+          designation: "used for styling",
+          image: "/tail.svg",
+        },
+        {
+          id: 3,
+          name: "Javascript",
+          designation: "used all around",
+          image: "/js.svg",
+        },
+        {
+          id: 4,
+          name: "Express",
+          designation: "used for the backend",
+          image: "/express.png",
+        },
+        {
+          id: 5,
+          name: "MongoDB",
+          designation: "Database",
+          image: "/Mongodb.svg",
+        },
+        {
+          id: 6,
+          name: "Vercel",
+          designation: "used for frontend deployment",
+          image: "/vercel.png",
+        },
+        {
+          id: 7,
+          name: "Render",
+          designation: "used for backend deployment",
+          image: "/render.png",
+        },
+      ],
     },
     {
       id: 2,
@@ -88,20 +132,45 @@ export const navItems = [
       img: "/protfolio.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png","/vercel.png"],
       link: "https://portfolio-idan-levi-website.vercel.app/",
+      tech:[
+        {
+          id: 1,
+          name: "Next.js",
+          designation: "used for the frontend",
+          image: "/next.svg",
+        },
+        {
+          id: 2,
+          name: "Tailwind CSS", 
+          designation: "used for styling",
+          image: "/tail.svg",
+        },
+        {
+          id: 3,
+          name: "Typescript",
+          designation: "used for the frontend",
+          image: "/ts.svg",
+        },
+        {
+          id: 4,
+          name: "Three.js",
+          designation: "animations library",
+          image: "/three.svg",
+        },
+        {
+          id: 5,
+          name: "Acternity",
+          designation: "frontend library",
+          image: "/aceternity.png",
+        },
+        {
+          id: 6,
+          name: "Vercel",
+          designation: "used for deployment",
+          image: "/vercel.png",
+        },
+      ]
     }
-  ];
-
-  export const socialMedia = [
-    {
-      id: 1,
-      img: "/git.svg",
-      url: "https://github.com/idanidan29",
-    },
-    {
-      id: 3,
-      img: "/link.svg",
-      url: "https://www.linkedin.com/in/idan-levi-7a8506242",
-    },
   ];
 
   export const testimonials = [
@@ -172,3 +241,16 @@ export const navItems = [
       thumbnail: "/exp4.svg",
     },
   ];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+    url: "https://github.com/idanidan29",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
+    url: "https://www.linkedin.com/in/idan-levi-7a8506242",
+  },
+];
