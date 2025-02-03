@@ -78,7 +78,7 @@ export const navItems = [
       title: "form management system", 
       short_title: "FMS",
       des: "be able to make a lottery, visualize data, generate files and more",
-      img: "/ParkingP.png",
+      img: "/FMS.png",
       iconLists: ["/next.svg", "/tail.svg", "js.svg", "express.png", "/Mongodb.svg","vercel.png","/render.png"],
       link: "https://github.com/idanidan29/BS-FSE-2025-Team9",
       tech:[
