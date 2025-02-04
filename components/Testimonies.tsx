@@ -4,13 +4,14 @@ import React from "react";
 
 import { companies, testimonials } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { Cover } from "./ui/cover";
 
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-blue-400"> Those I&apos;ve Worked With</span>
+        <Cover>Endorsements</Cover>
+         and Feedback
       </h1>
 
 

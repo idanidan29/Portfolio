@@ -32,11 +32,11 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            my space themed portfolio
           </p>
 
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Crafting Digital Solutions Turning Ideas into Reality"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 
