@@ -130,7 +130,7 @@ export const navItems = [
       id: 2,
       title: "this Portfolio website",
       short_title: "Portfolio", 
-      des: "A website to showcase my work and skills in a creative way",
+      des: "A website to showcase my work and skills",
       img: "/protfolio.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png","/vercel.png"],
       link: "https://github.com/idanidan29/Portfolio",
@@ -256,13 +256,3 @@ export const socialMedia = [
     url: "https://www.linkedin.com/in/idan-levi-7a8506242",
   },
 ];
-
-export const cards = [
-  {
-    title: "Forest Adventure",
-    src: "",
-  },
-  {
-    title: "Valley of life",
-    src: "",
-  },];

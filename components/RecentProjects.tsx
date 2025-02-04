@@ -53,7 +53,9 @@ const RecentProjects = () => {
 
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
-                  <AnimatedTooltip items={item.tech}/>
+                  
+                  <AnimatedTooltip items={item.tech}></AnimatedTooltip>
+                  
                 </div>
                 
 

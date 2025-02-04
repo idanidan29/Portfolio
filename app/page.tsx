@@ -1,6 +1,6 @@
 "use client";
 
-import { navItems, cards } from "@/data";
+import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
@@ -9,8 +9,6 @@ import Testimonies from "@/components/Testimonies";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import Projects from "@/components/Projects";
-
 
 const Home = () => {
   return (
@@ -20,7 +18,6 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-        <Projects />
         <Testimonies />
         <Experience />
         <Footer />
