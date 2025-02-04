@@ -4,13 +4,14 @@ import { mapLinear } from "three/src/math/MathUtils.js";
 import { projects } from "@/data";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { FaGithub, FaGithubAlt } from "react-icons/fa6";
+import { Cover } from "./ui/cover";
 
 const Projects = () => {
     return (
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10" id="projects">
             <h1 className="heading">
                 A small selection of{" "}
-                <span className="text-purple">Recent Projects</span>
+                <Cover>Recent Projects</Cover>
             </h1>
             {projects.map((item) => (
                 <CardContainer className="inter-var" key={item.id}>

@@ -10,7 +10,7 @@ const Clients = () => {
     <section id="testimonials" className="py-20">
       <h1 className="heading">
         Kind words from
-        <span className="text-purple"> Those I&apos;ve Worked With</span>
+        <span className="text-blue-400"> Those I&apos;ve Worked With</span>
       </h1>
 
 
