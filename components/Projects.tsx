@@ -3,8 +3,6 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import { mapLinear } from "three/src/math/MathUtils.js";
 import { projects } from "@/data";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
-import { FaGithub, FaGithubAlt } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
 
 const Projects = () => {
     return (
@@ -31,7 +29,7 @@ const Projects = () => {
                         </CardItem>
 
                         
-                        <CardItem translateZ="100" className="w-full mt-4">
+                        <CardItem translateZ="90" className="w-full mt-4">
                             <img
                                 src={item.img}
                                 height="1000"
@@ -48,21 +46,20 @@ const Projects = () => {
 
                         <div className="flex justify-between items-center mt-4">
                             <CardItem
-                                translateZ={40}
-                                as="button"
-                                onClick={() => window.open(item.link)}
+                                translateZ={20}
+                                as={Link}
+                                href={item.link}
                                 target="__blank"
                                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                             >
-                                Live Site →
+                                Try now →
                             </CardItem>
                             <CardItem
-                                translateZ={40}
+                                translateZ={20}
                                 as="button"
-                                onClick={() => window.open(item.git)}
                                 className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                             >
-                                Git Code<FaGithub className="inline-block ml-2" />
+                                Sign up
                             </CardItem>
                         </div>
                     </CardBody>
