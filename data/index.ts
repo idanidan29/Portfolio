@@ -16,7 +16,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "flex justify-center items-center text-center",
-    img: "galaxy.png",
+    img: "",
     spareImg: "",
   },
   {
@@ -221,28 +221,28 @@ export const workExperience = [
     title: "Sela Fullstack Course",
     desc: "10 months of intensive fullstack development training, learning the latest technologies, tools, and methodologies.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/blueStar1.png",
   },
   {
     id: 2,
     title: "Hackathon Mentor",
     desc: "Mentored groups in a 48-hour hackathon, guiding them through the development process. and used as advisor",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: "/blueStar2.png",
   },
   {
     id: 3,
     title: "Software Engineering",
     desc: "Currently pursuing a degree in software engineering, focusing on building a strong foundation in programming, system design, and modern software development practices.",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: "/blueStar4.png",
   },
   {
     id: 4,
     title: "Handful of Projects",
     desc: "Developed multiple projects focusing on web development, backend systems, and database integration, with attention to performance and user experience.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/blueStar3.png",
   },
 ];
 

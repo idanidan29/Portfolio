@@ -8,6 +8,7 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import dynamic from 'next/dynamic';
 import { BackgroundGradientAnimation } from "./GradientBg";
+import ParticleRing from "../ParticleRing";
 
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
@@ -125,7 +126,9 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
+          {id === 1 && <ParticleRing  />}
           {id === 2 && <GridGlobe />}
+
           
 
 
