@@ -129,54 +129,6 @@ export const projects = [
   },
   {
     id: 2,
-    title: "this Portfolio website",
-    short_title: "Portfolio",
-    des: "A website to showcase my work and skills in a creative way",
-    img: "/protfolio.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png", "/vercel.png"],
-    link: "http://portfolio-idanidan29s-projects.vercel.app",
-    git: "https://github.com/idanidan29/Portfolio",
-    tech: [
-      {
-        id: 1,
-        name: "Next.js",
-        designation: "used for the frontend",
-        image: "/next.svg",
-      },
-      {
-        id: 2,
-        name: "Tailwind CSS",
-        designation: "used for styling",
-        image: "/tail.svg",
-      },
-      {
-        id: 3,
-        name: "Typescript",
-        designation: "used for the frontend",
-        image: "/ts.svg",
-      },
-      {
-        id: 4,
-        name: "Three.js",
-        designation: "animations library",
-        image: "/three.svg",
-      },
-      {
-        id: 5,
-        name: "Acternity",
-        designation: "frontend library",
-        image: "/aceternity.png",
-      },
-      {
-        id: 6,
-        name: "Vercel",
-        designation: "used for deployment",
-        image: "/vercel.png",
-      },
-    ],
-  },
-  {
-    id: 3,
     title: "Password encryption system",
     short_title: "PES",
     des: "A system that encrypts passwords using steganography",
@@ -184,7 +136,49 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png", "/vercel.png"],
     link: "https://lockpixel.vercel.app/",
     git: "https://github.com/idanidan29/steganography",
-    tech: [],
+    tech: [{
+      id: 1,
+      name: "Next.js",
+      designation: "for frontend",
+      image: "/next.svg",
+    },
+      {
+        id: 2,
+        name: "Tailwind CSS",
+        designation: "for styling",
+        image: "/tail.svg",
+      },
+      {
+        id: 3,
+        name: "Typescript",
+        designation: "for frontend",
+        image: "/ts.svg",
+      },
+      {
+        id: 4,
+        name: "Acternity",
+        designation: "frontend library",
+        image: "/aceternity.png",
+      },
+      {
+        id: 5,
+        name: "Vercel",
+        designation: "frontend deployment",
+        image: "/vercel.png",
+      },
+      {
+        id: 6,
+        name: "Flask",
+        designation: "for backend",
+        image: "/flask.png",
+      },
+      {
+        id: 7,
+        name: "python",
+        designation: "for backend",
+        image: "/python.png",
+      }
+    ],
   },
 ];
 
