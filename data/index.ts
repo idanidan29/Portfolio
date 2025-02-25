@@ -173,8 +173,19 @@ export const projects = [
         designation: "used for deployment",
         image: "/vercel.png",
       },
-    ]
-  }
+    ],
+  },
+  {
+    id: 3,
+    title: "Password encryption system",
+    short_title: "PES",
+    des: "A system that encrypts passwords using steganography",
+    img: "/PES.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/aceternity.png", "/vercel.png"],
+    link: "https://lockpixel.vercel.app/",
+    git: "https://github.com/idanidan29/steganography",
+    tech: [],
+  },
 ];
 
 export const testimonials = [
