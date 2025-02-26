@@ -2,7 +2,7 @@
 
 🌌 A space-themed portfolio showcasing my projects and skills.
 
-## 🌍 Live Demo
+## 🌍 Live Site
 🔗 [Visit my portfolio](http://portfolio-idanidan29s-projects.vercel.app)
 
 ## 🛠️ Technologies Used
