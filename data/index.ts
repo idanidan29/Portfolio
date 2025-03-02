@@ -142,42 +142,42 @@ export const projects = [
       designation: "for frontend",
       image: "/next.svg",
     },
-      {
-        id: 2,
-        name: "Tailwind CSS",
-        designation: "for styling",
-        image: "/tail.svg",
-      },
-      {
-        id: 3,
-        name: "Typescript",
-        designation: "for frontend",
-        image: "/ts.svg",
-      },
-      {
-        id: 4,
-        name: "Acternity",
-        designation: "frontend library",
-        image: "/aceternity.png",
-      },
-      {
-        id: 5,
-        name: "Vercel",
-        designation: "frontend deployment",
-        image: "/vercel.png",
-      },
-      {
-        id: 6,
-        name: "Flask",
-        designation: "for backend",
-        image: "/flask.png",
-      },
-      {
-        id: 7,
-        name: "python",
-        designation: "for backend",
-        image: "/python.png",
-      }
+    {
+      id: 2,
+      name: "Tailwind CSS",
+      designation: "for styling",
+      image: "/tail.svg",
+    },
+    {
+      id: 3,
+      name: "Typescript",
+      designation: "for frontend",
+      image: "/ts.svg",
+    },
+    {
+      id: 4,
+      name: "Acternity",
+      designation: "frontend library",
+      image: "/aceternity.png",
+    },
+    {
+      id: 5,
+      name: "Vercel",
+      designation: "frontend deployment",
+      image: "/vercel.png",
+    },
+    {
+      id: 6,
+      name: "Flask",
+      designation: "for backend",
+      image: "/flask.png",
+    },
+    {
+      id: 7,
+      name: "python",
+      designation: "for backend",
+      image: "/python.png",
+    }
     ],
   },
 ];
