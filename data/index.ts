@@ -104,7 +104,7 @@ export const projects = [
       {
         id: 4,
         name: "Express",
-        designation: "used for the backend",
+        designation: "for API",
         image: "/express.png",
       },
       {
@@ -169,7 +169,7 @@ export const projects = [
     {
       id: 6,
       name: "Flask",
-      designation: "for backend",
+      designation: "for API",
       image: "/flask.png",
     },
     {
