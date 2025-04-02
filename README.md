@@ -32,3 +32,6 @@ Make sure you have **Node.js** installed on your system.
    ```sh
    npm run dev
    ```
+![image](https://github.com/user-attachments/assets/8e1537c2-b548-45a0-a0ae-d0254f6caef7)
+![image](https://github.com/user-attachments/assets/58805b87-90a6-4349-9bb8-6dc028e54f39)
+
