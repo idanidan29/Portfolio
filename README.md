@@ -8,7 +8,6 @@
 ## 🛠️ Technologies Used
 - **Next.js** – For server-side rendering and frontend development.
 - **Three.js** – For 3D animations and visual effects.
-- **Aceternity** – As a frontend component library.
 - **ShadCN** – For modern UI components.
 - **Framer Motion** – For smooth animations.
 - **Tailwind CSS** – For styling and responsiveness.
