@@ -12,11 +12,6 @@
 - **Framer Motion** – For smooth animations.
 - **Tailwind CSS** – For styling and responsiveness.
 
-## 🚀 Getting Started
-
-### Prerequisites
-Make sure you have **Node.js** installed on your system.
-
 ### Installation & Setup
 1. Clone the repository:
    ```sh
